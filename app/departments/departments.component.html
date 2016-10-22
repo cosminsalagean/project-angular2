@@ -1,0 +1,27 @@
+<h1>Departments</h1>
+<p>
+    <a routerLink="/users/new" class="btn btn-primary">Add Department</a>
+</p>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let user of users">
+			<td>
+				<a [routerLink]="['/users',user.id, 'employees']">
+			 		{{ user.name }}
+				</a>
+			</td>
+			<td>{{ user.description }}</td>
+
+			<td>
+                <i (click)="deleteUser(user)" class="glyphicon glyphicon-remove clickable"></i>
+            </td>
+		</tr>
+	</tbody>
+</table>

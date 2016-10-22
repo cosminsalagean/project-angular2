@@ -1,0 +1,31 @@
+<h1>Employees</h1>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Phone</th>
+        <th>Salary</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let employee of employees">
+            <td>
+                {{ employee.firstName }}
+            </td>
+            <td>
+                {{employee.lastName}}
+            </td>
+
+            <td>
+                {{employee.phone}}
+            </td>
+            <td>
+                {{employee.salary}}
+            </td>
+        </tr>
+    </tbody>
+</table>

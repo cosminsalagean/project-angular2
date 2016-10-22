@@ -1,0 +1,11 @@
+
+.clickable {
+    cursor: pointer;
+}
+
+.thumbnail {
+    border-radius: 100%;
+}
+.glyphicon-remove:hover {
+    color: red;
+}
